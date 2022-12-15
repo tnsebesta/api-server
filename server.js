@@ -1,12 +1,17 @@
 import express from 'express';
 import postgres from 'postgres';
+import dotenv from 'dotenv';
 
+dotenv.config();
 
+// console.log(process.env.DATABASE_URL);
 const sql = postgres(process.env.DATABASE_URL);
 const app = express();
 
 
 app.use(express.json());
+
+//server to host everything in this directory
 app.use(express.static("./client"));
 
 
