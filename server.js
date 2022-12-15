@@ -2,7 +2,7 @@ import express from 'express';
 import postgres from 'postgres';
 import {readFile} from 'node:fs/promises';
 
-const sql = postgres({ database: "plant_database"});
+const sql = postgres("postgres://plant_database_user:SJbAbgdrWTY7DfrU5FggrlqSjb4iGFJ9@dpg-cedo9hsgqg43c91p7n50-a.oregon-postgres.render.com/plant_database?ssl=true");
 const app = express();
 
 
