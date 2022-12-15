@@ -1,0 +1,1 @@
+INSERT INTO vegetables (plant_name, botanical_name, plant_type,sun_exposure, hardiness_zone) VALUES ('Artichoke', 'Cynara cardunculus var. scolymus', 'Vegetable', 'Full Sun', '5, 6, 7, 8, 9, 10, 11')
